@@ -40,7 +40,7 @@ public class LoginController {
             new SecurityContextLogoutHandler().logout(request,response,authentication);
         }
 
-        return "redirect:/login";
+        return "redirect:/user/login/login";
     }
 
     @GetMapping(value={"/denied","/api/denied"})
